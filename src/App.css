@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Outfit&family=PT+Serif:ital,wght@1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;1,400&family=Source+Serif+Pro:wght@600&family=Voltaire&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.appcontainer {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  width: 90vw !important;
+}
+
+form {
+  width: 30vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input,
+button {
+  height: 44px;
+  padding: 5px 10px;
+}
+
+#star-five {
+  /* Modify size here: */
+  --size: 30px;
+  --color: #333;
+  --half-size: calc(var(--size) / 2);
+  position: relative;
+  display: block;
+  color: var(--color);
+  width: 0px;
+  height: 0px;
+  border-right: var(--half-size) solid transparent;
+  border-bottom: calc(var(--half-size) * 0.7) solid var(--color);
+  border-left: var(--half-size) solid transparent;
+  transform: rotate(35deg);
+}
+#star-five:before {
+  border-bottom: calc(var(--half-size) * 0.8) solid var(--color);
+  border-left: calc(var(--half-size) * 0.3) solid transparent;
+  border-right: calc(var(--half-size) * 0.3) solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: calc(var(--half-size) * 0.45 * -1);
+  left: calc(var(--half-size) * 0.65 * -1);
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+#star-five:after {
+  position: absolute;
+  display: block;
+  color: var(---color);
+  top: calc(var(--half-size) * 0.03);
+  left: calc(var(--half-size) * -1.05);
+  width: 0px;
+  height: 0px;
+  border-right: var(--half-size) solid transparent;
+  border-bottom: calc(var(--half-size) * 0.7) solid var(--color);
+  border-left: var(--half-size) solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+#star-fives {
+  /* Modify size here: */
+  --size: 30px;
+  --color: rgb(235, 224, 18);
+  --half-size: calc(var(--size) / 2);
+  position: relative;
+  display: block;
+  color: var(--color);
+  width: 0px;
+  height: 0px;
+  border-right: var(--half-size) solid transparent;
+  border-bottom: calc(var(--half-size) * 0.7) solid var(--color);
+  border-left: var(--half-size) solid transparent;
+  transform: rotate(35deg);
+}
+#star-fives:before {
+  border-bottom: calc(var(--half-size) * 0.8) solid var(--color);
+  border-left: calc(var(--half-size) * 0.3) solid transparent;
+  border-right: calc(var(--half-size) * 0.3) solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: calc(var(--half-size) * 0.45 * -1);
+  left: calc(var(--half-size) * 0.65 * -1);
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+#star-fives:after {
+  position: absolute;
+  display: block;
+  color: var(---color);
+  top: calc(var(--half-size) * 0.03);
+  left: calc(var(--half-size) * -1.05);
+  width: 0px;
+  height: 0px;
+  border-right: var(--half-size) solid transparent;
+  border-bottom: calc(var(--half-size) * 0.7) solid var(--color);
+  border-left: var(--half-size) solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+/* for review card */
+.review_card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: max-content;
+  border-bottom: 1px solid gray;
+  padding: 20px 10px;
+}
+.review_card_top {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.review_card_top > img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.review_card_top > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: auto;
+}
